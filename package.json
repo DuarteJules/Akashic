@@ -10,6 +10,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build",
     "lint": "npm run next-lint && npm run format",
     "next-lint": "next lint --fix --quiet",
     "format": "prettier --write --log-level error .",

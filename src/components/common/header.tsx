@@ -1,7 +1,6 @@
 'use client'
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
-import { Button } from '@/components/ui/button'
 import { usePathname } from 'next/navigation'
 import Typography from '@/components/ui/typography'
 import {
@@ -83,7 +82,6 @@ export function Header({ className }: SidebarProps) {
           </div>
           <div className="hidden md:flex flex items-center w-full">
             <div className="flex items-center gap-x-8 flex-1">
-              {/*{getHeaderItems()}*/}
             </div>
           </div>
           {/* Mobile */}
