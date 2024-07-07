@@ -16,8 +16,7 @@ export default function Home() {
           Akashic
         </Typography>
         <Typography className="max-w-2xl text-primary-foreground" variant="h5">
-          Découvrez Akashic. Plongez dans un vaste catalogue de mangas, partagez vos avis avec d'autres passionnés, et suivez vos séries préférées tout en connectant avec une communauté dynamique. Rejoignez-nous et vivez une expérience de lecture unique et interactive!
-        </Typography>
+          {`Découvrez Akashic. Plongez dans un vaste catalogue de mangas, partagez vos avis avec d'autres passionnés, et suivez vos séries préférées tout en connectant avec une communauté dynamique. Rejoignez-nous et vivez une expérience de lecture unique et interactive!`}</Typography>
         <Image
           width={1024}
           height={632}
@@ -28,7 +27,7 @@ export default function Home() {
       <div className="flex flex-col md:pt-24 md:gap-36 gap-24 items-center">
         <div className="flex flex-col gap-12 items-center">
           <Typography className="max-w-2xl" variant="h1">
-            Le mot d'ordre : la communauté
+            {`Le mot d'ordre : la communauté`}
           </Typography>
           <div className="flex md:flex-row flex-col gap-12">
             <Feature
