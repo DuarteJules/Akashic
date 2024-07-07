@@ -2,7 +2,7 @@ import { Button } from '@/components/ui/button'
 import Typography from '@/components/ui/typography'
 import Image from 'next/image'
 import Feature from './feature'
-import { Workflow, Users, BookHeart, ThumbsUp } from 'lucide-react'
+import { Users, BookHeart, ThumbsUp } from 'lucide-react'
 import Link from 'next/link'
 
 export default function Home() {
