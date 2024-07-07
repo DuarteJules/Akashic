@@ -32,7 +32,6 @@ export function Header({ className }: SidebarProps) {
 
   const getLogo = () => (
     <Link href="/" className="pointer flex items-center">
-      <img src="/logo.svg" className="mr-3" />
       <Typography className=" text-foreground !text-base font-medium ">
         Akashic
       </Typography>

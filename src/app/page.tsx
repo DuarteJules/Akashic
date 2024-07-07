@@ -2,7 +2,7 @@ import { Button } from '@/components/ui/button'
 import Typography from '@/components/ui/typography'
 import Image from 'next/image'
 import Feature from './feature'
-import { ArrowUpDown, Timer, Workflow } from 'lucide-react'
+import { Workflow, Users, BookHeart, ThumbsUp } from 'lucide-react'
 import Link from 'next/link'
 
 export default function Home() {
@@ -13,48 +13,38 @@ export default function Home() {
     >
       <div className="flex flex-col gap-6 items-center">
         <Typography className="max-w-2xl" variant="h1">
-          Information you need during on-call emergencies
+          Akashic
         </Typography>
         <Typography className="max-w-2xl text-primary-foreground" variant="h5">
-          Quickly link new on-call tickets to similar past
-          incidents and their solutions. All directly in
-          Slack the moment an incident happens.
+          Découvrez Akashic. Plongez dans un vaste catalogue de mangas, partagez vos avis avec d'autres passionnés, et suivez vos séries préférées tout en connectant avec une communauté dynamique. Rejoignez-nous et vivez une expérience de lecture unique et interactive!
         </Typography>
-        <Link
-          href="https://map.sistilli.dev/public/coding/SaaS+Boilerplate"
-          target="_blank"
-        >
-          <Button size="tiny" variant="ghost">
-            {`Get Started`}
-          </Button>
-        </Link>
         <Image
           width={1024}
           height={632}
           alt="Pandem.dev hero image"
-          src="/hero1.png"
+          src="/image1.png"
         />
       </div>
       <div className="flex flex-col md:pt-24 md:gap-36 gap-24 items-center">
         <div className="flex flex-col gap-12 items-center">
           <Typography className="max-w-2xl" variant="h1">
-            Quick solutions, less stress
+            Le mot d'ordre : la communauté
           </Typography>
           <div className="flex md:flex-row flex-col gap-12">
             <Feature
-              icon={<Timer size={24} />}
-              headline="Fix emergencies fast"
-              description="Save 20-30 minutes per on-call ticket - no more searching for relevant issues and runbooks"
+              icon={<Users size={24} />}
+              headline="Liste d'amis"
+              description="Créez votre liste d'amis pour suivre leurs lectures et partager vos découvertes manga favorites. Restez connecté avec votre communauté et échangez des recommandations en temps réel!"
             />
             <Feature
-              icon={<ArrowUpDown size={24} />}
-              headline="Universally compatible"
-              description="Works with PagerDuty, Jira, or custom Slack alerts—Pandem integrates with any system"
+              icon={<BookHeart size={24} />}
+              headline="Liste de favoris"
+              description="Ajoutez vos mangas préférés à votre liste de favoris pour y accéder facilement et suivre les mises à jour. Ne manquez jamais un chapitre de vos séries incontournables!"
             />
             <Feature
-              icon={<Workflow size={24} />}
-              headline="Secure for your org"
-              description="We keep your data safe by taking top security measures."
+              icon={<ThumbsUp size={24} />}
+              headline="Réactions"
+              description="Réagissez aux pages de mangas avec des commentaires et utilisez le système de upvote/downvote pour faire ressortir les plus intéressants. Participez à des discussions dynamiques et découvrez les meilleures réactions de la communauté!"
             />
           </div>
         </div>
