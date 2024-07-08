@@ -1,7 +1,7 @@
 import Typography from '@/components/ui/typography'
 import Image from 'next/image'
 import Feature from './feature'
-import { Users, BookHeart, ThumbsUp } from 'lucide-react'
+import { Heart, BookHeart, ThumbsUp } from 'lucide-react'
 
 export default function Home() {
   return (
@@ -29,9 +29,9 @@ export default function Home() {
           </Typography>
           <div className="flex md:flex-row flex-col gap-12">
             <Feature
-              icon={<Users size={24} />}
-              headline="Liste d'amis"
-              description="Créez votre liste d'amis pour suivre leurs lectures et partager vos découvertes manga favorites. Restez connecté avec votre communauté et échangez des recommandations en temps réel!"
+              icon={<Heart size={24} />}
+              headline="Recommandations"
+              description="Recevez des recommandations personnalisées de mangas en fonction de vos goûts. Découvrez de nouvelles séries adaptées à vos préférences et enrichissez votre expérience de lecture!"
             />
             <Feature
               icon={<BookHeart size={24} />}
@@ -44,14 +44,37 @@ export default function Home() {
               description="Réagissez aux pages de mangas avec des commentaires et utilisez le système de upvote/downvote pour faire ressortir les plus intéressants. Participez à des discussions dynamiques et découvrez les meilleures réactions de la communauté!"
             />
           </div>
+          <div className="flex md:flex-row flex-col" style={{width:'100%', justifyContent:'space-between'}}>
+            <Image
+              width={1024/4}
+              height={632/4}
+              alt="Pandem.dev hero image"
+              src="/image3.png"
+            />
+            <Image
+              width={1024/4}
+              height={632/4}
+              alt="Pandem.dev hero image"
+              src="/image4.png"
+            />
+            <Image
+              width={1024/4}
+              height={632/4}
+              alt="Pandem.dev hero image"
+              src="/image5.png"
+            />
+          </div>
         </div>
         <div className="flex flex-col gap-6 max-w-2xl items-center">
           <Typography className="max-w-2xl" variant="h1">
             Chatter avec vos amis
           </Typography>
+          <Typography className="max-w-2xl text-primary-foreground" variant="h5">
+            {`
+Discutez de vos mangas préférés avec vos amis grâce à notre fonctionnalité de chat. Échangez vos impressions en direct et partagez votre passion!`}</Typography>
           <Image
-            width={1024}
-            height={632}
+            width={1024/4}
+            height={632/4}
             alt="Pandem.dev hero image"
             src="/image2.png"
           />
