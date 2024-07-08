@@ -14,7 +14,8 @@ export default function Home() {
           Akashic
         </Typography>
         <Typography className="max-w-2xl text-primary-foreground" variant="h5">
-          {`Découvrez Akashic. Plongez dans un vaste catalogue de mangas, partagez vos avis avec d'autres passionnés, et suivez vos séries préférées tout en connectant avec une communauté dynamique. Rejoignez-nous et vivez une expérience de lecture unique et interactive!`}</Typography>
+          {`Découvrez Akashic. Plongez dans un vaste catalogue de mangas, partagez vos avis avec d'autres passionnés, et suivez vos séries préférées tout en connectant avec une communauté dynamique. Rejoignez-nous et vivez une expérience de lecture unique et interactive!`}
+        </Typography>
         <Image
           width={1024}
           height={632}
@@ -24,6 +25,12 @@ export default function Home() {
       </div>
       <div className="flex flex-col md:pt-24 md:gap-36 gap-24 items-center">
         <div className="flex flex-col gap-12 items-center">
+          <Typography className="max-w-2xl text-primary-foreground" variant="h5">
+            {`La France est le deuxième plus grand consommateur de mangas au monde, un véritable bastion de passionnés qui démontre l'ampleur de cet engouement. En 2023, les ventes de mangas ont atteint un chiffre impressionnant de 40 millions, avec un prix moyen de 6,99 € par volume. De plus, chaque année, environ 1500 nouvelles sorties enrichissent ce marché dynamique.`}
+          </Typography>
+          <Typography className="max-w-2xl text-primary-foreground" variant="h5">
+            {`Face à cette demande croissante et à l'abondance de publications, une application permettant de lire des mangas gratuitement devient essentielle. Elle offre aux lecteurs l'opportunité d'explorer de nouvelles séries sans contrainte financière, d'accéder facilement à un vaste catalogue et de suivre les dernières parutions. En rendant les mangas plus accessibles, cette application joue un rôle crucial dans la démocratisation de la culture manga en France, tout en soutenant la découverte et le partage entre passionnés.`}
+          </Typography>
           <Typography className="max-w-2xl" variant="h1">
             {`Le mot d'ordre : la communauté`}
           </Typography>
